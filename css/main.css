@@ -287,4 +287,42 @@ textarea {
     }
 }
 
+body{
+    padding-left: 160px;  
+    padding-right: 160px;
+    background: #0587a3;
+    background: -moz-linear-gradient(-45deg, #0587a3 0%, #21c7d2 100%);
+    background: -webkit-linear-gradient(-45deg, #0587a3 0%,#21c7d2 100%);
+    background: linear-gradient(135deg, #0587a3 0%,#21c7d2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0587a3', endColorstr='#21c7d2',GradientType=1 );
+}
 
+div{
+      
+}
+
+.top-container {
+    text-align: center;
+  }
+  
+.header {
+    color: #f1f1f1;
+  }
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.sticky + .title_base {
+    padding-top: 130px;
+  }
+
+.title_base {
+    font-size: 50pt;
+    padding-left: 360px;
+    padding-right: 360px;
+    color: #ffffff;
+}
