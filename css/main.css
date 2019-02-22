@@ -4,14 +4,6 @@ a{
     cursor: pointer;
 }
 
-body{
-    font-family: 'montserrat';
-    background: #0587a3;
-    background: -moz-linear-gradient(-45deg, #0587a3 0%, #21c7d2 100%);
-    background: -webkit-linear-gradient(-45deg, #0587a3 0%,#21c7d2 100%);
-    background: linear-gradient(135deg, #0587a3 0%,#21c7d2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0587a3', endColorstr='#21c7d2',GradientType=1 );
-}
 
 .padding{
     max-width: 1180px;
@@ -27,186 +19,268 @@ header{
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.top-container {
-    align-content: space-between;
-    justify-content: space-between;
-  }
-  
-.header {
-    color: #f1f1f1;
-  }
-
-
-.sticky {
+header.sticky_fix{
     position: fixed;
     top: 0;
     width: 100%;
-  }
-
-.sticky_down {
-    max-width: 1180px;
-    margin: 0 auto;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-
-.sticky_down_back{
-    background-color: #3f6b9c;
-}
-
-.sticky + .title_base {
-    padding-top: 130px;
-  }
-
-
-.first_section{
-    height: 2500px;
-}
-
-.title_base {
-    font-weight: normal;
-    font-size: 50pt;
-    color: #ffffff;
-    text-align: center;
-    max-width: 780;
-    margin: 0 auto;
-}
-
-.title_second {
-    font-weight: 300;
-    font-size: 26pt;
-    color: #ffffff;
-    text-align: center;
+    z-index: 10;
 }
 
 .head_medium{
+    
     font-weight: 500;
-    font-size: 16pt;
+    font-size: 16px;
     color: #ffffff;
-    align-content: space-between;
+    padding: 0 25px 0 25px;
 }
 
 .head_bold{
     font-weight: 700;
-    font-size: 12pt;
-    color: #21c7d2;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 0 0 0 16px;
 }
 
+.head_bold_button{
+    color: #21c7d2;
+    background-color:#ffffff; 
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+}
+
+.first_section{
+    height: 1600px;
+    padding-top: 110px;
+    background: #0587a3;
+    background: -moz-linear-gradient(top, #0587a3 0%, #21c7d2 100%);
+    background: -webkit-linear-gradient(top, #0587a3 0%,#21c7d2 100%);
+    background: linear-gradient(to bottom, #0587a3 0%,#21c7d2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0587a3', endColorstr='#21c7d2',GradientType=0 );
+} 
+
+.title_base {
+    font-weight: normal;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.title_second {
+    font-weight: 300;
+    font-size: 26px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+
 .before_picture{
-    align-content: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
     font-weight: 700;
-    font-size: 12;
+    font-size: 12px;
+    padding-bottom: 73px;
 }
 
 .link_bold_frame{
     color: #ffffff;
-    background: #21c7d2
+    background-color: #21c7d2;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    width: 240px;
 }
 
 .link_bold_simple{
     color: #21c7d2;
+    padding-left: 35px;
+    padding-right: 15px;
 }
 
 .mobile{
-    width: 470px;
+    width: 456px;
     overflow: hidden;
-    margin: 0 auto;
-    
+    padding-bottom: 110px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
 }
 
 .inner{
     position: absolute;
     top: 76px;
-    left: 375px;
+    left: 14px;
     overflow: hidden;
+    z-index: 1;
 }
 
 .mobile_form{
-    width: 470px;
     z-index: 2;
     position: relative;
+    margin-left: -5px;
 }
 
 
-.toBackround{
+.after_first{
     background-color: #eef1f2;
 }
 
-.padding_two{
-    max-height: 372px;
-    max-width: 980px;
-    margin: 0 auto;
-}
-
 .title_third{
-    max-width: 580px;
     color: #2c2c2c;
-    margin: 0 auto;
     font-weight: 300;
-    font-size: 40pt;
+    font-size: 40px;
     text-align: center;
-
+    padding-top: 130px;
+    margin: 0;
 }
 
 .title_forth{
-    max-width: 800px;
     color: #6e6e6e;
-    margin: 0 auto;
     font-weight: 300;
-    font-size: 18pt;
+    font-size: 18px;
     text-align: center;
+    padding-bottom: 85px;
 }
 
-.padding_three{
+.padding_two{
     max-width: 980px;
-    color: #ffffff;
     margin: 0 auto;
-    font-weight: 300;
+    padding: 90px 0 90px 0;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
-footer{
-    background-color: #ffffff;
+.slider{
+    text-align: center;
+    margin-right: 100px;
 }
 
-.padding_for{
-    max-width: 1180px;
-    margin: 0 auto;
+.in_slider{
+    margin-left: 10%; 
 }
 
-th{
+/* .paginator{
+    position: relative;
+    float: right;
+    margin-bottom: 20px;
+}  */
+
+li{
+    position: relative;
+    float: left;
+    /* margin-right: 20px; */
+}
+
+.prev{
+    margin-top: 15px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: url('../img/back.png') no-repeat;
+    }
+  
+.next{
+    margin-top: -35px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: url('../img/next.png') no-repeat;
+    position: relative;
+    left: 100%;
+    }
+    
+  
+
+.footer_collumn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+}
+
+.footer_collumn_1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_collumn_2{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_collumn_3{
+    display: flex;
+    flex-direction: column;
+}
+
+.flags{
+    padding-top: 110px;
+}
+
+.web{
+    width: 170px;
+    padding-top: 15px;
+}
+
+.ios_android{
+    display: flex;
+    align-items: center;
+}
+
+.downloads{
+    color: #21c7d2;
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+.arrow{
+    padding-left: 15px;
+}
+
+.th{
     color: #9e9e9e;
     font-size: 12px;
     font-weight: 500;
+    padding-bottom: 25px;
 }
 
-td{
+.td{
     color: #2c2d2e;
     font-size: 16px;
     font-weight: normal;
-    text-align: justify;
+    padding-bottom: 20px;
 }
 
 .elseTd{
+    padding-top:100px;
     color: #8e8e8e;
     font-size: 12px;
     font-weight: 500;
 }
 
-.whitebackround{
-    background-color: #ffffff;
-}
 
-.padding_five{
-    max-width: 1180px;
-    margin: 0 auto;
+.last_element{
     color: #868686;
     font-size: 12px;
     font-weight: normal;
+    padding: 15px 0 15px 0;
+    border-top: 2px solid #dadada; 
 }
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 .popup {
     background: blue;
@@ -214,6 +288,7 @@ td{
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 3;
     /* border-top: 2px solid red; */
 }
 
