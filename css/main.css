@@ -283,15 +283,80 @@ li{
 
 
 .popup {
-    background: blue;
-    height: 100px;
+    background: #047791;
+    height: 70px;
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 3;
     /* border-top: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .popup.hidden {
     display: none;
+}
+
+.popupwhitpadding{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -22% 0 -17%;
+}
+
+.email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.discount{
+    font-weight: normal;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.emailtext{
+    font-weight: normal;
+    font-size: 10px;
+    color: #ffffff;
+    padding-right: 10px;
+}
+
+.emailinput{
+    font-weight: 300;
+    font-size: 12px;
+    color: #a4a7a7;
+    width: 300px;
+    height: 35px;
+    border: 2px solid #21c7d2;
+    border-radius: 5px;
+    background-color: #047791;
+}
+
+.emailinputdiv{
+    padding: 0 10px 0 10px;
+}
+
+.emailbutton{
+    font-weight: normal;
+    font-size: 12px;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #21c7d2;
+    width: 100px;
+    border: none;
+    height: 39px;
+    padding-left: 10px;
+}
+
+.x{
+    width:20px;
+    height:20px;
+    padding-right: 20px;
+}
+
+.close{
+  
 }

@@ -9,9 +9,19 @@ $('.slider').slick({
   nextArrow: $('.next'),
 });
 
-$('.close_popup').click(function(e) {
+$('.close').click(function(e) {
   e.preventDefault();
   $('.popup').addClass("hidden");
+});
+
+$('.emailinput').click(function(e){
+  e.preventDefault;
+  $('.emailinput').val(""); 
+});
+
+$('.emailbutton').click(function(e){
+  e.preventDefault;
+  $('.emailinput').val("Enter your email"); 
 });
 
 var lastScrollTop = 0;
